@@ -1,0 +1,20 @@
+{
+  "name": "agvstin/phootstrap",
+  "description": "PHP application template (silex + redbean + twig + bootstrap)",
+  "keywords": ["template", "silex","bootstrap"],
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+    "name": "Agustín Gutiérrez",
+    "email": "agu.gutierrez@gmail.com",
+    "role": "Developer"
+  }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "silex/silex": "1.0.*",
+    "twig/twig": "1.0.*",
+    "gabordemooij/redbean": "3.*"
+  }
+}

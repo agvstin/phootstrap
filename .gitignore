@@ -1,0 +1,3 @@
+vendors
+config/parameters.ini
+db/*.sqlite
