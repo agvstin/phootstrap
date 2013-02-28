@@ -23,10 +23,15 @@ website](http://getcomposer.org) for more instructions):
 
 ```
 curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
 ```
 
-Follow these steps:
+You can install phootstrap using composer:
+
+```
+composer.phar create-project agvstin/phootstrap --stability=dev
+```
+
+or directly from GitHub:
 
 ```
 # clone this repo
@@ -41,13 +46,27 @@ git commit -m "Initial import from phootstrap"
 
 # install vendors
 composer.phar install
+```
 
-# copy parameters file (and edit as you need...)
-cp config/parameters.example.ini config/parameters.ini
-
-# start your server (you'll need php 5.4.0 for this to work)
-./bin/server 7890
-
-# head to http://localhost:7890
+Copy the config file
 
 ```
+# copy parameters file (and edit as you need...)
+cp config/parameters.example.ini config/parameters.ini
+```
+
+If you have `php 5.4.0` or greater, you can start a web server by
+running:
+
+```
+# use a free port
+./bin/server 7890
+```
+
+Otherwise, setup a virtual host and point the `DocumentRoot` to the
+`web` directory.
+
+Open your browser and head to http://localhost:7890 (or the configured
+vitual host).
+
+That's it! You can start developing your app!
